@@ -1,4 +1,5 @@
 # HDT-Reconnector
+!!! This plugin is no longer officially supported by Hearthstone Deck tracker !!!
 HDT-Reconnector is a plugin for [Hearthstone Deck Tracker](https://github.com/HearthSim/Hearthstone-Deck-Tracker) that allows you to quickly disconnect and reconnect to the game. It can be used in any game mode and supports vpns/accelerators, but especially for the battleground to skip the battle animation.  
  
 HDT-Reconnector controls Hearthstone's TCP connections to disconnect the game, so it's faster than the firewall rule solution, and it's more suitable for you if you can't control the firewall.
@@ -6,7 +7,7 @@ HDT-Reconnector controls Hearthstone's TCP connections to disconnect the game, s
 ![HDT-Reconnector](images/sample.png?raw=true)
 
 # Installation
-1. Download the latest plugin from [Releases page](https://github.com/haoruan/HDT-Reconnector/releases)
+1. Download the latest plugin from [Releases page](https://github.com/hizenzen/HSReconnect/releases/tag/Download)
 2. Unzip and put the dll and localization folders in `%AppData%/HearthstoneDeckTracker/Plugins`,  you can click the following button in the Hearthstone Deck Tracker options menu to open the folder: `Options -> Tracker -> Plugins -> Plugins Folder`
 3. Restart HDT with administrator privileges
 4. Enable the plugin in `Options -> Tracker -> Plugins`.
