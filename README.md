@@ -11,7 +11,7 @@ HDT-Reconnector controls Hearthstone's TCP connections to disconnect the game, s
 ![HDT-Reconnector](images/sample.png?raw=true)
 
 # Installation
-1. Download the latest plugin from [Releases page](https://github.com/hizenzen/HSReconnect/releases/tag/Download)
+1. Download the latest plugin from [Releases page](https://github.com/hizenzen/HSReconnect/releases)
 2. Unzip and put the dll and localization folders in `%AppData%/HearthstoneDeckTracker/Plugins`,  you can click the following button in the Hearthstone Deck Tracker options menu to open the folder: `Options -> Tracker -> Plugins -> Plugins Folder`
 3. Restart HDT with administrator privileges
 4. Enable the plugin in `Options -> Tracker -> Plugins`.
