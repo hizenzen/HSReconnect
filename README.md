@@ -1,6 +1,6 @@
 # HDT-Reconnector
 
-!!! This plugin is no longer officially supported by Hearthstone Deck tracker !!!
+!!! This plugin is no longer officially supported by Hearthstone Deck tracker AND Blizzard !!!
 
 Created by https://github.com/haoruan, modified by me
 
