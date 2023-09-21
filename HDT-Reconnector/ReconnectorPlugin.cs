@@ -17,7 +17,7 @@ namespace HDT_Reconnector
 {
     public class ReconnectorPlugin : IPlugin
     {
-        public string Name => "Reconnector";
+        public string Name => "HSReconnector";
 
         public string Description => "Quickly skip hearthstone animation by disconnecting and reconnecting\n\nFor more information and updates, check out:\nhttps://github.com/haoruan/HDT-Reconnector";
 
@@ -25,12 +25,12 @@ namespace HDT_Reconnector
 
         public string Author => "Hypervisor";
 
-        public Version Version => Version.Parse("1.4.6");
+        public Version Version => Version.Parse("1.4.7");
 
         public MenuItem MenuItem { get; private set; }
 
         private ReconnectPanel reconnectPanel;
-        private SimulatePanel simulatePanel;
+       // private SimulatePanel simulatePanel;
 
         public void OnButtonPress()
         {
@@ -63,19 +63,19 @@ namespace HDT_Reconnector
 
             }
 
-            if (simulatePanel != null)
-            {
-                try
-                {
-                    simulatePanel.OnUpdate();
-                }
-                catch (LogException ex)
-                {
-                    MenuItem.IsChecked = false;
-                    Log.Error(ex);
-                }
+            //if (simulatePanel != null)
+            //{
+            //    try
+            //    {
+            //        simulatePanel.OnUpdate();
+            //    }
+            //    catch (LogException ex)
+            //    {
+            //        MenuItem.IsChecked = false;
+            //        Log.Error(ex);
+            //    }
 
-            }
+            //}
         }
 
         private void CreateMenuItem()
@@ -102,11 +102,11 @@ namespace HDT_Reconnector
                     Core.OverlayCanvas.Children.Add(reconnectPanel);
                 }
 
-                if (simulatePanel == null)
-                {
-                    simulatePanel = new SimulatePanel();
-                    Core.OverlayCanvas.Children.Add(simulatePanel);
-                }
+                //if (simulatePanel == null)
+                //{
+                //    simulatePanel = new SimulatePanel();
+                //    Core.OverlayCanvas.Children.Add(simulatePanel);
+                //}
             };
 
             MenuItem.Unchecked += (sender, args) =>
@@ -117,11 +117,11 @@ namespace HDT_Reconnector
                     reconnectPanel = null;
                 }
 
-                using (simulatePanel)
-                {
-                    Core.OverlayCanvas.Children.Remove(simulatePanel);
-                    simulatePanel= null;
-                }
+                //using (simulatePanel)
+                //{
+                //    Core.OverlayCanvas.Children.Remove(simulatePanel);
+                //    simulatePanel= null;
+                //}
             };
         }
     }
